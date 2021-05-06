@@ -26,7 +26,7 @@ public class GitHubApiApplication  implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		ds.download();
+		//ds.download();
 	}
 
 }

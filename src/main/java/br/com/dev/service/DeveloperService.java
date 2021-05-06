@@ -45,8 +45,9 @@ public class DeveloperService {
 	
 	
 	public Developer salvar(Developer developer) {
-		boolean podeSalvar = developer.getId() == null;
-		if(podeSalvar) developerRepository.save(developer);
+		boolean podeSalvar = developerRepository.findByLogin(developer.getLogin()).isEmpty();
+		if(podeSalvar)
+		developerRepository.save(developer);
 		else throw new DuplicatedResourceException();
 		return developer;
 	}

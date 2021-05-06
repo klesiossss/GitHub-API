@@ -68,7 +68,7 @@ public class DeveloperController {
 	
 	@PutMapping
 	public ResponseEntity<Developer> upadate(@RequestBody Developer developer){
-		Developer dev = developerService.salvar(developer);
+		Developer dev = developerService.update(developer);
 		return ResponseEntity.ok(dev);
 	}
 	
