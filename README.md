@@ -11,6 +11,7 @@ http://34.72.199.87/dev/{id}
 # Este endpoint busca developers por quantidade de repositorios; substitua {numOfRepos} por um numero inteiro
 # Foi a maneira pratica de achar bons programadores, pelo numero de repositorios, variando para mais e para menos 10% dado um valor de entrada. 
 # Por exemplo 20, retornara desenvolvedores em um range dos que possuem entre 18 e 22 repositorios:
+
    http://34.72.199.87/dev/repos/{numOfRepos}
 
 # este endpoint busca developers por quantidade de seguidores; substitua {numOfFollowers} por um numero inteiro. 
